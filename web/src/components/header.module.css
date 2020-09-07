@@ -4,7 +4,6 @@
 .root {
   position: relative;
   z-index: 100;
-  backgorund-color: blue;
 }
 
 .wrapper {
@@ -20,7 +19,7 @@
 }
 
 .branding {
-  font-size: inherit;
+  font-size: 24px;
   margin: 0;
   flex: 1;
 
