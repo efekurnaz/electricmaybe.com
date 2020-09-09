@@ -10,14 +10,15 @@
 }
 
 .footer {
-
+  background-color: red;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
 
 .footerWrapper {
-  box-sizing: border-box;
-  max-width: 960px;
-  padding: 1.5em;
-  margin: 0 auto;
+  bottom: 0;
+  position: relative;
 
   @media (--media-min-small) {
     padding: 2em;

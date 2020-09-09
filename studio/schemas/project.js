@@ -26,7 +26,7 @@ export default {
     },
     {
       name: "excerpt",
-      title: "Excerpt",
+      title: "Home Page Description",
       type: "blockText"
     },
     {
@@ -36,9 +36,15 @@ export default {
     },
     {
       name: "body",
-      title: "Body",
+      title: "Project Page Description",
       type: "blockContent"
     }
+    // {
+    //   name: "categories",
+    //   title: "Categories",
+    //   type: "array",
+    //   of: [{ type: "mainImage" }, { type: "blockTextt" }]
+    // }
   ],
   preview: {
     select: {

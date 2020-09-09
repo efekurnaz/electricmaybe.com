@@ -7,9 +7,9 @@ import BlockText from './block-text'
 import styles from './project-preview.module.css'
 import { responsiveTitle3 } from './typography.module.css'
 
-function ProjectPreview (props) {
+function ProjectPreview(props) {
   return (
-    <Link className={styles.root} to={`/project/${props.slug.current}`}>
+    <a className={styles.root} href={`${props.slug.current}`}>
       <div className={styles.leadMediaThumb}>
         {props.mainImage && props.mainImage.asset && (
           <img
@@ -27,7 +27,7 @@ function ProjectPreview (props) {
           <BlockText blocks={props._rawExcerpt} />
         </div>
       )}
-    </Link>
+    </a>
   )
 }
 

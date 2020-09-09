@@ -50,42 +50,6 @@ export const query = graphql`
         }
       }
     }
-
-    posts: allSanityPost(limit: 6, sort: { fields: [publishedAt], order: DESC }) {
-      edges {
-        node {
-          id
-          publishedAt
-          mainImage {
-            crop {
-              _key
-              _type
-              top
-              bottom
-              left
-              right
-            }
-            hotspot {
-              _key
-              _type
-              x
-              y
-              height
-              width
-            }
-            asset {
-              _id
-            }
-            alt
-          }
-          title
-          _rawExcerpt
-          slug {
-            current
-          }
-        }
-      }
-    }
   }
 `
 
@@ -104,9 +68,7 @@ const IndexPage = props => {
   const postNodes = (data || {}).posts
     ? mapEdgesToNodes(data.posts).filter(filterOutDocsWithoutSlugs)
     : []
-  const projectNodes = (data || {}).projects
-    ? mapEdgesToNodes(data.projects).filter(filterOutDocsWithoutSlugs)
-    : []
+  const projectNodes = (data || {}).projects ? mapEdgesToNodes(data.projects) : []
 
   if (!site) {
     throw new Error(
@@ -119,6 +81,7 @@ const IndexPage = props => {
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <Container>
         <h1 hidden>Welcome to {site.title}</h1>
+        {console.log(projectNodes)}
         {projectNodes && (
           <ProjectPreviewGrid
             title="Latest projects"

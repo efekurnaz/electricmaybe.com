@@ -24,11 +24,11 @@ function ProjectPreviewGrid(props) {
             </li>
           ))}
       </ul>
-      {props.browseMoreHref && (
+      {/* {props.browseMoreHref && (
         <div className={styles.browseMoreNav}>
           <Link to={props.browseMoreHref}>Project more</Link>
         </div>
-      )}
+      )} */}
     </div>
   )
 }

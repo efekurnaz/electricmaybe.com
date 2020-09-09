@@ -42,6 +42,7 @@ export default () =>
       S.listItem()
         .title("Projects")
         .child(
+          S.documentTypeList("project"),
           S.list()
             .title("projects")
             .items([
