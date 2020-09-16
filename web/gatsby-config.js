@@ -24,7 +24,7 @@ module.exports = {
       options: {
         custom: {
           families: ["Rosalindale"],
-          urls: ["/web/src/static/fonts/fonts.css"],
+          urls: ["/fonts/fonts.css"],
         },
       },
     },
