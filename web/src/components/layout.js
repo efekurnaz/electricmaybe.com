@@ -7,7 +7,7 @@ import styles from './layout.module.css'
 const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
   <>
     <h1 className={styles.title} >your site needs some electric maybe?</h1>
-    <h6 className={styles.text}>We wire high voltage Shopify stores.</h6>
+    <h6 className={styles.text}>We wire high voltage <em>Shopify</em> stores.</h6>
   <div className={styles.link_wrapper}>
     <a href="https://interioricons.com/" target="_blank" className={styles.job_link}>Interior Icons > </a>
     <a href="https://ascotandcharlie.com/" target="_blank"  className={styles.job_link}>Ascot and Charlie > </a>

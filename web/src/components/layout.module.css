@@ -10,38 +10,37 @@ h1, h6{
 
 body{
   background-color: #191919;
-}
-
-body > div {
-  opacity: 0;
-  transition: .3s;
+  overscroll-behavior: none;
 }
 
 .title{
   font-family: 'Roslindale';
   color: #EAEAEA;
-  text-align: left;
+  text-align: right;
   padding:  50px;
   margin: 0px;
   line-height: 1;
-  max-width: 1440px;
-  font-size: 10vw;
+  font-size: 8vw;
+  max-width: 1000px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #191919;
+  text-shadow: 2px 2px #ffa705;
 }
 .text{
-  color: white;
+  color: #eaeaea;
   font-size: 40px;
   font-weight: 300;
   padding: 0 50px;
   margin-bottom: 50px;
 }
 .job_link{
-  color: #EAEAEA;
+  color: #989898;
   display: inline-block;  
   margin-bottom: 10px;
 }
 .job_link:hover{
   text-decoration: underline;
-  color: #EAEAEA;
+  color: #ffe1a9;
 }
 .link_wrapper{
   display: flex;
@@ -50,8 +49,9 @@ body > div {
 }
 
 .link{
-  color: #EAEAEA;
+  color: #ffe1a9;
   text-decoration: underline;
+  padding-bottom:50px;
 }
 .img{
   display: none;
