@@ -56,6 +56,9 @@ body{
   display: none;
 }
 
+*::-moz-selection { background: #ffe1a9; color: black;}
+*::selection { background: #ffe1a9; color: black}
+
 @media screen and (--media-max-xlarge){ 
   .title{
     font-size: 72px;
