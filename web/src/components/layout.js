@@ -3,9 +3,10 @@ import Header from './header'
 
 import '../styles/layout.css'
 import styles from './layout.module.css'
+import logo from './static/logo.jpg'
 
 const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
-  <>
+  <img>
     <h1 className={styles.title} >your site needs some electric maybe?</h1>
     <h6 className={styles.text}>We wire high voltage Shopify stores.</h6>
   <div className={styles.link_wrapper}>
@@ -22,6 +23,8 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
   </div>
 
   <a className={styles.link} href="mailto:hello@electricmaybe.com">hello@electricmaybe.com</a>
+
+  <img src="/logo.jpg" style="display: none"></img>
   </>
 )
 
