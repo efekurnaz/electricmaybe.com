@@ -13,7 +13,7 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
     <a href="https://ascotandcharlie.com/" target="_blank"  className={styles.job_link}>Ascot and Charlie > </a>
     <a href="https://www.corneliajames.com/" target="_blank" className={styles.job_link}>Cornelia James > </a>
     <a href="https://www.strikeman.io/" target="_blank" className={styles.job_link}>Strikeman > </a>
-    <a href="https://vancouverhairpinlegs.com/" target="_blank" className={styles.job_link}>Vencouver Hair Pin Legs ></a>
+    <a href="https://vancouverhairpinlegs.com/" target="_blank" className={styles.job_link}>Vancouver Hair Pin Legs ></a>
     <a href="https://purelabelnutrition.com/" target="_blank" className={styles.job_link}>Pure Label Nutrition ></a>
     <a href="https://mimselicious.com/" target="_blank" className={styles.job_link}>Mimselicious > </a>
     <a href="https://mystarrynight.com/" target="_blank" className={styles.job_link}>My Starry Night ></a>
