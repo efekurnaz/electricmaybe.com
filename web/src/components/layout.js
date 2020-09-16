@@ -23,8 +23,6 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
   </div>
 
   <a className={styles.link} href="mailto:hello@electricmaybe.com">hello@electricmaybe.com</a>
-
-  <img src="/logo.jpg" style="display: none"></img>
   </>
 )
 
