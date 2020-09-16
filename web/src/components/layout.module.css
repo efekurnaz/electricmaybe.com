@@ -1,7 +1,59 @@
 @import '../styles/media-queries.css';
 @import '../styles/vars.css';
 
-.content {
+@font-face {
+  font-family: 'RoslindaleDisplayCondensed';
+  src: url('/web/src/styles/RoslindaleDisplayCondensed-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+a{
+  text-decoration: none;
+  padding: 0 50px;
+  display: inline;
+
+}
+h1,h6{
+  margin: 0;
+}
+
+body{
+  background-color: #191919;
+}
+.title{
+  font-family: RoslindaleDisplayCondensed;
+  color: #EAEAEA;
+  font-size: 7vw;
+  text-align: left;
+  width: 1280px;
+  padding: 0 50px;
+  margin-top: 50px;
+}
+.text{
+  color: white;
+  font-size: 40px;
+  font-weight: 300;
+  padding: 0 50px;
+  margin-bottom: 40px;
+}
+.job_link{
+  color: #EAEAEA;
+  display: inline-block;  
+  margin-bottom: 10px;
+}
+.link_wrapper{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.link{
+  color: #EAEAEA;
+  text-decoration: underline;
+}
+
+/* .content {
   min-height: calc(100% - 73px - 152px);
 
   @media (--media-min-small) {
@@ -38,4 +90,4 @@
   @nest & a {
     color: inherit;
   }
-}
+} */
