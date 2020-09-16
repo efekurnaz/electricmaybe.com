@@ -1,13 +1,5 @@
 @import '../styles/media-queries.css';
 @import '../styles/vars.css';
-
-@font-face {
-  font-family: 'RoslindaleDisplayCondensed';
-  src: url('/web/src/styles/RoslindaleDisplayCondensed-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
 a{
   text-decoration: none;
   padding: 0 50px;
@@ -22,13 +14,15 @@ body{
   background-color: #191919;
 }
 .title{
-  font-family: RoslindaleDisplayCondensed;
+  font-family: 'Roslindale';
   color: #EAEAEA;
-  font-size: 7vw;
   text-align: left;
-  width: 1280px;
-  padding: 0 50px;
-  margin-top: 50px;
+  padding:  50px;
+  margin: 0px;
+  line-height: 1;
+  width: 100%;
+  max-width: 1440px;
+  font-size: 10vw;
 }
 .text{
   color: white;
@@ -41,6 +35,10 @@ body{
   color: #EAEAEA;
   display: inline-block;  
   margin-bottom: 10px;
+}
+.job_link:hover{
+  text-decoration: underline;
+  color: #EAEAEA;
 }
 .link_wrapper{
   display: flex;

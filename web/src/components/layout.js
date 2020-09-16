@@ -14,11 +14,11 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
     <a href="https://www.corneliajames.com/" target="_blank" className={styles.job_link}>Cornelia James > </a>
     <a href="https://www.strikeman.io/" target="_blank" className={styles.job_link}>Strikeman > </a>
     <a href="https://vancouverhairpinlegs.com/" target="_blank" className={styles.job_link}>Vencouver Hair Pin Legs ></a>
-    <a href="https://purelabelnutrition.com/" target="_blank" className={styles.job_link}>Pure Label Nutrition</a>
+    <a href="https://purelabelnutrition.com/" target="_blank" className={styles.job_link}>Pure Label Nutrition ></a>
     <a href="https://mimselicious.com/" target="_blank" className={styles.job_link}>Mimselicious > </a>
-    <a href="https://mystarrynight.com/" target="_blank" className={styles.job_link}>My Starry Night</a>
-    <a href="https://tumfort.com.au/" target="_blank" className={styles.job_link}>Tumfort</a>
-    <a href="https://dc.chocomarket.com/" target="_blank" className={styles.job_link}>Chocomarket</a>
+    <a href="https://mystarrynight.com/" target="_blank" className={styles.job_link}>My Starry Night ></a>
+    <a href="https://tumfort.com.au/" target="_blank" className={styles.job_link}>Tumfort ></a>
+    <a href="https://dc.chocomarket.com/" target="_blank" className={styles.job_link}>Chocomarket ></a>
   </div>
 
   <a className={styles.link} href="mailto:hello@electricmaybe.com">hello@electricmaybe.com</a>

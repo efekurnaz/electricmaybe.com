@@ -18,7 +18,16 @@ module.exports = {
         watchMode: true,
         overlayDrafts: true
       }
-    }
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Rosalindale"],
+          urls: ["/web/src/static/fonts/fonts.css"],
+        },
+      },
+    },
   ]
 }
 
