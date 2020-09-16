@@ -28,6 +28,12 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: provess.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
+      }
+    }
   ]
 }
 
