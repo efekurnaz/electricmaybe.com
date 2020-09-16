@@ -19,3 +19,9 @@ body > div,
 body > div > div {
   height: 100%;
 }
+
+
+.wf-loading body > div,
+.wf-inactive body > div {
+  opacity: 1;
+}

@@ -14,12 +14,7 @@ body{
 
 body > div {
   opacity: 0;
-  transition: .3;
-}
-
-.wf-loading body > div,
-.wf-inactive body > div {
-  opacity: 1;
+  transition: .3s;
 }
 
 .title{
