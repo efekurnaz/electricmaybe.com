@@ -11,6 +11,17 @@ h1, h6{
 body{
   background-color: #191919;
 }
+
+body > div {
+  opacity: 0;
+  transition: .3;
+}
+
+.wf-loading body > div,
+.wf-inactive body > div {
+  opacity: 1;
+}
+
 .title{
   font-family: 'Roslindale';
   color: #EAEAEA;
