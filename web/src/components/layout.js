@@ -10,6 +10,7 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
     <h6 className={styles.text}>We wire high voltage <em>Shopify</em> stores.</h6>
   <div className={styles.link_wrapper}>
     <a href="https://superfat.com/" target="_blank" className={styles.job_link}>SuperFat > </a>
+    <a href="https://de.defacto.com/" target="_blank" className={styles.job_link}>DeFacto > </a>
     <a href="https://interioricons.com/" target="_blank" className={styles.job_link}>Interior Icons > </a>
     <a href="https://ascotandcharlie.com/" target="_blank"  className={styles.job_link}>Ascot and Charlie > </a>
     <a href="https://www.corneliajames.com/" target="_blank" className={styles.job_link}>Cornelia James > </a>
