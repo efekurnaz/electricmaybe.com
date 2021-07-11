@@ -1,11 +1,11 @@
 var plugins = [{
-      plugin: require('/Users/efecankurnaz/Documents/Projects/electricmaybe.com/web/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/efecankurnaz/Projects/electricmaybe.com/web/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/efecankurnaz/Documents/Projects/electricmaybe.com/web/node_modules/gatsby-source-sanity/gatsby-ssr'),
+      plugin: require('/Users/efecankurnaz/Projects/electricmaybe.com/web/node_modules/gatsby-source-sanity/gatsby-ssr'),
       options: {"plugins":[],"projectId":"lv3g49d1","dataset":"production","token":"sk9w2kfik1Ida5CP5bErFQt5BSolxGl4a0JiQRbpE7DSheM61Is8qiD9jCH4oOaq4YtT5dcRgA0r1DM3vBAzjFFuzIccmjVkoGSem0xwan3AVkQV56ClrVUVmG5yVrLGZUuKTxYds5vjScY6hyqybNATthVWdvmPZ4yTe0uE0oP7mhNDNoRh","watchMode":true,"overlayDrafts":true},
     },{
-      plugin: require('/Users/efecankurnaz/Documents/Projects/electricmaybe.com/web/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      plugin: require('/Users/efecankurnaz/Projects/electricmaybe.com/web/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
       options: {"plugins":[],"trackingId":"none"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

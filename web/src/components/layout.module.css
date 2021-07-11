@@ -2,7 +2,6 @@
 @import '../styles/vars.css';
 a{
   text-decoration: none;
-  padding: 0 50px;
 }
 h1, h6{
   margin: 0;
@@ -16,7 +15,7 @@ body{
 .title{
   font-family: 'Roslindale';
   color: #EAEAEA;
-  padding:  50px;
+  padding:  50px 0;
   margin: 0px;
   line-height: 1;
   font-size: 120px;
@@ -29,7 +28,6 @@ body{
   color: #eaeaea;
   font-size: 40px;
   font-weight: 300;
-  padding: 0 50px;
   margin-bottom: 50px;
 }
 .job_link{
@@ -52,9 +50,6 @@ body{
   text-decoration: underline;
   padding-bottom:50px;
 }
-.img{
-  display: none;
-}
 
 *::-moz-selection { background: #ffe1a9; color: black;}
 *::selection { background: #ffe1a9; color: black}
@@ -72,4 +67,8 @@ body{
     max-width: 100%;  
     padding: 0 32px !important;
   }
+}
+
+.img {
+  display: none;
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../../public/img/logo.jpg'
+import shopifyPartner from '../../public/img/shopify-partner.svg'
 
 import '../styles/layout.css'
 import styles from './layout.module.css'
@@ -23,7 +24,7 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
   </div>
 
   <a className={styles.link} href="mailto:hello@electricmaybe.com">hello@electricmaybe.com</a>
-  <img className={styles.img} src={logo}></img>
+  <img className={styles.img} src={shopifyPartner}></img>
   </>
 )
 
