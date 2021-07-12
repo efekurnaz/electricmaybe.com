@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../../public/img/logo.jpg'
 import shopifyPartner from '../../public/img/shopify-partner.svg'
+import logomark from '../../public/img/logo-reveal.png'
 
 import '../styles/layout.css'
 import styles from './layout.module.css'
@@ -29,6 +30,7 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
       </div>
 
       <img className={styles.img} src={shopifyPartner}></img>
+      <img className={styles.img} src={logomark}></img>
     </div>
   </div>
   </>
