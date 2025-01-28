@@ -24,6 +24,9 @@
   <meta name="twitter:description"
     content="We wire high voltage Shopify themes. Custom stores, development, and ecommerce solutions.">
   <link rel="canonical" href="https://electricmaybe.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;700&display=swap" rel="stylesheet">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178112859-1"></script>
   <script>
@@ -58,14 +61,14 @@
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family: 'Geist', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       background: radial-gradient(circle at center, #ffffff 0%, #f8f8f8 100%);
       color: #4a4a4a;
       min-height: 100vh;
       display: flex;
       align-items: center;
       padding: 2rem;
-      font-weight: 500;
+      font-weight: 400;
     }
 
     .logo {
@@ -114,13 +117,15 @@
     }
 
     .line-1 {
-      font-size: 56px;
+      font-size: 40px;
+      letter-spacing: -0.04em;
     }
 
     .line-2 {
-      font-size: 96px;
+      font-size: 72px;
       margin-top: -1rem;
       display: block;
+      letter-spacing: -0.04em;
     }
 
     a {
@@ -138,23 +143,53 @@
       border-bottom-color: #333333;
     }
 
-    .help-center {
+    .button {
       padding: 1rem 2rem;
       border-radius: 4px;
-      color: white;
-      background: linear-gradient(to bottom, #555555, #222222);
       border: none;
-      transition: all 0.5s ease;
+      transition: all 0.2s ease;
     }
-    .help-center:hover {
+
+    .button.primary {
+      background: linear-gradient(to bottom, #555555, #222222);
       color: white;
-      filter: brightness(1.2);
+      &:hover {
+        filter: brightness(1.5);
+        transform: translateY(-1px);
+      }
+    }
+    .button.secondary {
+      border: 1px solid #333333;
+      color: #333333;
+      &:hover {
+        transform: translateY(-1px);
+      }
+    }
+    .button.ghost {
+      color: #333333;
+      text-decoration: underline;
+      &:hover {
+        transform: translateY(-1px);
+      }
+    }
+
+    .caption {
+      transition: all 0.5s ease;
     }
 
     .caption {
       margin-top: 1.5rem;
     }
 
+    .flex {
+      display: flex;
+    }
+    .gap-2 {
+      gap: 1rem;
+    }
+    .mt-2 {
+      margin-top: 2rem;
+    }
     .flex-right {
       display: flex;
       flex-direction: column;
@@ -224,18 +259,10 @@
       <p class="caption">
         150+ custom <i>Shopify</i> stores served since 2014
       </p>
-      <div class="flex-between">
-        <a class="help-center" href="https://themes.shopify.com/themes/aisle/styles/grocery" aria-label="Email us">our themes</a>
-        <div class="flex-right">
-        <div class="row">
-          themes support: 
-          <a href="https://electricmaybesupport.zendesk.com/" aria-label="Email us">help center</a>
-        </div>
-        <div class="row">
-          custom services: 
-          <a href="mailto:hello@electricmaybe.com" aria-label="Email us">hello@electricmaybe.com</a>
-        </div>
-        </div>
+      <div class="flex gap-2 mt-2">
+        <a class="button primary" href="https://themes.shopify.com/themes/aisle/styles/grocery" aria-label="Email us">buy our themes</a>
+        <a class="button secondary" href="https://electricmaybesupport.zendesk.com/" aria-label="Email us">get theme support</a>
+        <a class="button ghost" href="mailto:hello@electricmaybe.com" aria-label="Email us">custom enquiries (email)</a>
       </div>
     </div>
   </div>
