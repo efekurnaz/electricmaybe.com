@@ -36,9 +36,10 @@
   <script defer>
     // Load analytics after page load
     window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
     const script = document.createElement('script');
     script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-178112859-1';
-    script.onload = function() {
+    script.onload = () => {
       gtag('js', new Date());
       gtag('config', 'UA-178112859-1', {
         'page_title': document.title,
@@ -243,9 +244,36 @@
         150+ custom <i>Shopify</i> stores served since 2014
       </p>
       <div class="flex gap-2 mt-2">
-        <a class="button primary" href="https://themes.shopify.com/themes/aisle/styles/grocery" aria-label="Email us">buy our themes</a>
-        <a class="button secondary" href="https://electricmaybesupport.zendesk.com/" aria-label="Email us">get theme support</a>
-        <a class="button ghost" href="mailto:hello@electricmaybe.com" aria-label="Email us">custom enquiries (email)</a>
+        <a 
+          class="button primary" 
+          href="https://themes.shopify.com/themes/aisle/styles/grocery" 
+          aria-label="View our themes on Shopify"
+          onclick="gtag('event', 'click', {
+            'event_category': 'CTA',
+            'event_label': 'Buy Themes',
+            'value': 1
+          });"
+        >buy our themes</a>
+        <a 
+          class="button secondary" 
+          href="https://electricmaybesupport.zendesk.com/" 
+          aria-label="Access theme support"
+          onclick="gtag('event', 'click', {
+            'event_category': 'Support',
+            'event_label': 'Help Center',
+            'value': 1
+          });"
+        >get theme support</a>
+        <a 
+          class="button ghost" 
+          href="mailto:hello@electricmaybe.com" 
+          aria-label="Contact us for custom services"
+          onclick="gtag('event', 'click', {
+            'event_category': 'Contact',
+            'event_label': 'Custom Enquiry',
+            'value': 1
+          });"
+        >custom enquiries (email)</a>
       </div>
     </div>
   </div>
