@@ -74,20 +74,22 @@
       color: #4a4a4a;
       min-height: 100dvh;
       display: flex;
-      align-items: center;
-      padding: 2rem;
       font-weight: 400;
     }
 
     .container {
+      width: 100%;
+    }
+
+    .title-container {
       max-width: 85ch;
-      margin: 0 auto;
-      transform: translateY(-20%);
+      margin: 2rem auto 0;
+      width: fit-content;
+      padding: 2rem;
     }
 
     .logo {
       width: 120px;
-      margin-bottom: 1.25rem;
     }
 
     /* Typography */
@@ -203,12 +205,10 @@
     /* Responsive */
     @media (max-width: 680px) {
       body {
-        padding: 2rem 1rem;
         justify-content: flex-start;
       }
 
       .container {
-        transform: translateY(-4rem);
         margin-left: 0;
         width: 100%;
       }
@@ -231,13 +231,60 @@
         text-align: center;
       }
     }
+
+    /* Snap Slider Styles */
+    .snap-slider {
+      display: flex;
+      overflow-x: auto;
+      max-width: 100%;
+      min-width:0;
+      scroll-snap-type: x mandatory;
+      gap: 1rem;
+      margin: 0;
+      padding: 2rem;
+      height: 512px;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .snap-slider::-webkit-scrollbar {
+      display: none;
+    }
+
+    .snap-slider .work-item {
+      scroll-snap-align: center;
+      scroll-padding-left: 2rem;
+      flex: 0 0 auto;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+      font-size: 13px;
+      color:#666666;
+      font-weight: medium;
+    }
+
+    .snap-slider img,
+    .snap-slider video {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      width: auto;
+      height: 100%;
+    }
+
+    /* Adjust container margin to account for snap-slider */
+
+    @media (max-width: 680px) {
+      .snap-slider {
+        padding: 1rem;
+        margin-bottom: 3rem;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <div class="snap-slider">
-    
-  </div>
   <div class="container">
     <div class="title-container">
       <img src="logo.svg" alt="Electric Maybe Logo" class="logo" height="36" width="120">
@@ -281,6 +328,163 @@
             'value': 1
           });"
         >custom enquiries (email)</a>
+      </div>
+    </div>
+    <div class="snap-slider">
+      <div class="work-item">
+        <video autoplay muted loop playsinline>
+          <source src="works/nwp8.mp4" type="video/mp4">
+        </video>
+        <span>Northern Wide Plank</span>
+      </div>
+      <div class="work-item">
+        <video autoplay muted loop playsinline>
+          <source src="works/hismile3.mp4" type="video/mp4">
+        </video>
+        <span>HiSmile</span>
+      </div>
+      <!-- HiSmile -->
+      <div class="work-item">
+        <img src="works/hismile1.webp" alt="HiSmile project showcase" loading="lazy">
+        <span>HiSmile</span>
+      </div>
+      <div class="work-item">
+        <img src="works/hismile2.webp" alt="HiSmile project showcase" loading="lazy">
+        <span>HiSmile</span>
+      </div>
+      <div class="work-item">
+        <video autoplay muted loop playsinline>
+          <source src="works/hismile4.mp4" type="video/mp4">
+        </video>
+        <span>HiSmile</span>
+      </div>
+      <div class="work-item">
+        <img src="works/hismile5.png" alt="HiSmile project showcase" loading="lazy">
+        <span>HiSmile</span>
+      </div>
+      <div class="work-item">
+        <video autoplay muted loop playsinline>
+          <source src="works/hismile6.mp4" type="video/mp4">
+        </video>
+        <span>HiSmile</span>
+      </div>
+      <div class="work-item">
+        <img src="works/hismile6.webp" alt="HiSmile project showcase" loading="lazy">
+        <span>HiSmile</span>
+      </div>
+
+      <!-- Interior Icons -->
+      <div class="work-item">
+        <video autoplay muted loop playsinline>
+          <source src="works/ii1.mp4" type="video/mp4">
+        </video>
+        <span>Interior Icons</span>
+      </div>
+      <div class="work-item">
+        <video autoplay muted loop playsinline>
+          <source src="works/ii3.mp4" type="video/mp4">
+        </video>
+        <span>Interior Icons</span>
+      </div>
+      <div class="work-item">
+        <video autoplay muted loop playsinline>
+          <source src="works/ii4.mp4" type="video/mp4">
+        </video>
+        <span>Interior Icons</span>
+      </div>
+      <div class="work-item">
+        <video autoplay muted loop playsinline>
+          <source src="works/ii5.mp4" type="video/mp4">
+        </video>
+        <span>Interior Icons</span>
+      </div>
+      <div class="work-item">
+        <img src="works/ii6.png" alt="Interior Icons project showcase" loading="lazy">
+        <span>Interior Icons</span>
+      </div>
+      <div class="work-item">
+        <video autoplay muted loop playsinline>
+          <source src="works/ii7.mp4" type="video/mp4">
+        </video>
+        <span>Interior Icons</span>
+      </div>
+      <div class="work-item">
+        <img src="works/ii8.png" alt="Interior Icons project showcase" loading="lazy">
+        <span>Interior Icons</span>
+      </div>
+      <div class="work-item">
+        <img src="works/ii9.png" alt="Interior Icons project showcase" loading="lazy">
+        <span>Interior Icons</span>
+      </div>
+      <div class="work-item">
+        <img src="works/ii10.png" alt="Interior Icons project showcase" loading="lazy">
+        <span>Interior Icons</span>
+      </div>
+
+      <!-- Nuuds -->
+      <div class="work-item">
+        <img src="works/nuuds1.png" alt="Nuuds project showcase" loading="lazy">
+        <span>Nuuds</span>
+      </div>
+      <div class="work-item">
+        <img src="works/nuuds2.png" alt="Nuuds project showcase" loading="lazy">
+        <span>Nuuds</span>
+      </div>
+      <div class="work-item">
+        <video autoplay muted loop playsinline>
+          <source src="works/nuuds3.mp4" type="video/mp4">
+        </video>
+        <span>Nuuds</span>
+      </div>
+      <div class="work-item">
+        <img src="works/nuuds6.webp" alt="Nuuds project showcase" loading="lazy">
+        <span>Nuuds</span>
+      </div>
+      <div class="work-item">
+        <video autoplay muted loop playsinline>
+          <source src="works/nuuds4.mp4" type="video/mp4">
+        </video>
+        <span>Nuuds</span>
+      </div>
+      <div class="work-item">
+        <video autoplay muted loop playsinline>
+          <source src="works/nuuds5.mp4" type="video/mp4">
+        </video>
+        <span>Nuuds</span>
+      </div>
+
+      <!-- Northern Wide Plank -->
+      <div class="work-item">
+        <video autoplay muted loop playsinline>
+          <source src="works/nwp1.mp4" type="video/mp4">
+        </video>
+        <span>Northern Wide Plank</span>
+      </div>
+      <div class="work-item">
+        <video autoplay muted loop playsinline>
+          <source src="works/nwp2.mp4" type="video/mp4">
+        </video>
+        <span>Northern Wide Plank</span>
+      </div>
+      <div class="work-item">
+        <img src="works/nwp3.png" alt="Northern Wide Plank project showcase" loading="lazy">
+        <span>Northern Wide Plank</span>
+      </div>
+      <div class="work-item">
+        <img src="works/nwp4.png" alt="Northern Wide Plank project showcase" loading="lazy">
+        <span>Northern Wide Plank</span>
+      </div>
+      <div class="work-item">
+        <img src="works/nwp5.png" alt="Northern Wide Plank project showcase" loading="lazy">
+        <span>Northern Wide Plank</span>
+      </div>
+      <div class="work-item">
+        <img src="works/nwp6.png" alt="Northern Wide Plank project showcase" loading="lazy">
+        <span>Northern Wide Plank</span>
+      </div>
+      <div class="work-item">
+        <img src="works/nwp7.png" alt="Northern Wide Plank project showcase" loading="lazy">
+        <span>Northern Wide Plank</span>
       </div>
     </div>
   </div>
