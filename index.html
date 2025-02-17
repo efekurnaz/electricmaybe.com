@@ -318,12 +318,15 @@
           class="button primary"
           href="mailto:hello@electricmaybe.com"
           aria-label="Contact us for custom services"
-          onclick="gtag('event', 'click', {
+          onclick="() => {
+            Smallchat("open");
+            gtag('event', 'click', {
             'event_category': 'Contact',
             'event_label': 'Custom Enquiry',
             'value': 1
+          }
           });"
-        >let us help quickly</a>
+        >reach us now</a>
         <a
           class="button secondary"
           href="https://themes.shopify.com/themes/aisle/styles/grocery"
